@@ -18,7 +18,10 @@ char webpage[] =
 "<style>body { background-color: #E379A1 }</style></head>\r\n"
 "<body><center><h1>Chatchanok Wongsamang (Grace)</h1><br>\r\n"
 "<img src=\"w.png\">\r\n";
-"<iframe src=\"https://www.youtube.com/watch?v=dxWvtMOGAhw\"></iframe></center></body></html>\r\n";
+"<video width="320" height="240" controls>
+  <source src="bp.mp4" type="video/mp4">
+  
+</video>"
 
 int main(int argc, char *argv[])
 {
@@ -85,7 +88,7 @@ int main(int argc, char *argv[])
 
             else if(!strncmp(buf, "GET /https://www.youtube.com/watch?v=dxWvtMOGAhw",16))
             {
-                fdiframe = open("https://www.youtube.com/watch?v=dxWvtMOGAhw", O_DONLY);
+                fdiframe = open("bp.mp4", O_DONLY);
                 sendfile(fd_client, fdiframe, NULL, 6000);
                 close(fdiframe);
             }
