@@ -17,11 +17,11 @@ char webpage[] =
 "<html><head><title>Chatchanok</title>\r\n"
 "<style>body { background-color: #E379A1 }</style></head>\r\n"
 "<body><center><h1>Chatchanok Wongsamang (Grace)</h1><br>\r\n"
-"<img src=\"w.png\">\r\n";
+"<img src=\"w.png\">\r\n"
 "<video width="320" height="240" controls>
   <source src="bb.webm" type="video/mp4">
   
-</video>"
+</video>\r\n";
 
 int main(int argc, char *argv[])
 {
