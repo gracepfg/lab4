@@ -18,11 +18,10 @@ char webpage[] =
 "<style>body { background-color: #E379A1 }</style></head>\r\n"
 "<body><center><h1>Chatchanok Wongsamang (Grace)</h1><br>\r\n"
 "<img src=\"w.png\">\r\n"
-"<video width="320" height="240" controls>
-  <source src="bb.webm" type="video/mp4">
-  
-</video>\r\n";
+"<video width="320" height="240" controls>\r\n"
+"<source src=\"small.mp4\" type=\"video/mp4\"></video>\r\n";
 
+  
 int main(int argc, char *argv[])
 {
     struct sockaddr_in server_addr, client_addr;
@@ -86,9 +85,9 @@ int main(int argc, char *argv[])
                 close(fdimg);
             }
 
-            else if(!strncmp(buf, "GET /bb.webm",16))
+            else if(!strncmp(buf, "GET /small.mp4",16))
             {
-                fdiframe = open("bb.webm", O_DONLY);
+                fdiframe = open("small.mp4", O_DONLY);
                 sendfile(fd_client, fdiframe, NULL, 6000);
                 close(fdiframe);
             }
