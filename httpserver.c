@@ -18,8 +18,7 @@ char webpage[] =
 "<style>body { background-color: #E379A1 }</style></head>\r\n"
 "<body><center><h1>Chatchanok Wongsamang (Grace)</h1><br>\r\n"
 "<img src=\"w.png\">\r\n";
-"<iframe width="420" height="315" 
-src=\"https://www.youtube.com/watch?v=dxWvtMOGAhw\"></iframe></center></body></html>\r\n";
+"<iframe src=\"https://www.youtube.com/watch?v=dxWvtMOGAhw\"></iframe></center></body></html>\r\n";
 
 int main(int argc, char *argv[])
 {
