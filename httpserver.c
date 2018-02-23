@@ -18,7 +18,7 @@ char webpage[] =
 "<style>body { background-color: #E379A1 }</style></head>\r\n"
 "<body><center><h1>Chatchanok Wongsamang (Grace)</h1><br>\r\n"
 "<img src=\"w.png\">\r\n"
-"<video width="320" height="240" controls>\r\n"
+"<video width=\"320\" height=\"240\" controls>\r\n"
 "<source src=\"small.mp4\" type=\"video/mp4\"></video>\r\n";
 
   
@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 
             else if(!strncmp(buf, "GET /small.mp4",16))
             {
-                fdiframe = open("small.mp4", O_DONLY);
+                fdiframe = open("small.mp4", O_RDONLY);
                 sendfile(fd_client, fdiframe, NULL, 6000);
                 close(fdiframe);
             }
